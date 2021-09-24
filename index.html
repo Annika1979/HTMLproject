@@ -4,61 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02eb2ab63e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
+   
         <!-- navigation page  -->
         
-        <header>
-            <nav> 
-                <img src="#" alt=""> <!-- company logo-->
-                <input type="text"> <!--search box-->                
-                <h2>Home</h2>
-                <h2>Discover</h2>
-                <h2>Partnerships</h2>
-                <button>Become a member</button>
-            </nav>
-    <!--header-->
-            <h1>What are the Sustainable Development Goals?</h1>
-            <button></button>
-       </header>
-       <section>
-           <div>
-                <img src="#" alt="">
-                <h2></h2>
-                <img src="#" alt="">
-                <img src="#" alt="">
-                <img src="#" alt="">
-             </div>
-            <div>
-                <img src="#" alt="">
-                <h2></h2>
-                <p></p>
-                <button></button>
-                <p></p>  <!--instagram icon -->
-                <p></p> <!--facebook icon -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="#" alt="" class="logo"> <!--logo on the nav bar-->
+                </div>
+                <div class="container">
+                    <form action="/" method="GET" class="form">
+                      <input type="text" placeholder="Search" class="search-field" />
+                      <button type="submit" class="search-button">
+                        <img src="images/search.png" class="cursor">
+                      </button>
+                    </form>
+                  </div> 
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="solution-page.html" class="nav-link">Solutions</a></li>
+                        <li class="nav-item"><a href="partnership-page.html" class="nav-link">Partnerships</a></li>
+                        <li class="nav-item"><a href="membership-page.html" class="nav-link">Become a member</a></li>
+                    </ul>
+                    <button class="donation">Make a Donation</button>
+                </nav>
             </div>
-            <div>
-                <h2></h2>
-                <p></p>
-                <img src="#" alt="">
+            
+        </header>
+        <!--Main content-->
+       <main>
+            <section class="top-page">
+                <h1>What are the Sustainable Development Goals?</h1>
 
-            </div>
-       </section>
+              
+                <img src="images/big-hand.png" alt="big hand dropping circle in blocks " class="bighand-img">
 
-        <footer></footer>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, dignissimos libero 
+                    quasi, delectus cupiditate aspernatur animi molestiae iure amet aliquid aperiam, 
+                    praesentium ex doloremque fugit ullam omnis eaque necessitatibus eum. Lorem ipsum 
+                    dolor sit, amet consectetur adipisicing elit. Vitae, rem et neque omnis odit itaque 
+                    hic veniam. 
+
+                </h3>
+            </section>
+
+           <section class="puzzle">
+                <h2 class="puzzle-header">Choose the piece that fits you best:</h2>
+                <div class="puzzle-container">
+                <img class="puzzle-piece" src="#" alt="" >
+                <img class="puzzle-piece" src="#" alt="">
+                <img class="puzzle-piece" src="#" alt="">
+                </div>
+           </section>
+
+            <section class="hexagon">
+                <img src="images/hexagon.png" alt="" class="hexagon-pic">
+                <div class="hexagon-text">
+                    <h2>Balancing Realism and Ambition in a Post-Covid-19 World:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Temporibus amet modi ea, in voluptates nihil expedita magni 
+                        est esse illum consectetur quisquam quibusdam molestiae quia, 
+                        dicta debitis, recusandae atque veritatis?
+                    </p>
+                    <button class="discord"><i class="fab fa-discord"></i>Join Discord</button>
+                    <ul class="social-list">
+                        <li class="social-item"><a href="#" class="social-link"></a><i class="fab fa-instagram"></i></li> <!--instagram icon-->
+                        <li class="social-item"><a href="#" class="social-link"></a><i class="fab fa-facebook"></i></li> <!--facebook icon-->
+                     </ul>
+                </div>
+            </section>
+
+            <section class="learn-more">
+                <h2>Learn More</h2>
+                <p>Explore the ways that your actions can improve the quality of life for future generations:</p>
+                <img src="images/bigpuzzle.png" alt="multicolored puzzle pieces">
+            </section>
+
+        </main>
+         <!--footer-->
+        <footer>
+       
+
+        </footer>
+        
+          
         
         
         
         
         
         
-        
-        
-        
-        
-            </main>
+          
    
 </body>
 </html>
