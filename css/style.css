@@ -4,12 +4,13 @@ body {
     background-color:#110620;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
     }
 
 
 
-/* search bar in navigation */
-.form {
+/* search bar in navigation test*/
+/* .form {
     display: flex;
     flex-direction: row;
   }
@@ -20,14 +21,14 @@ body {
     border-radius: 100px;
     outline: none;
   }
-  
+
   .search-button {
     background: transparent;
     border: none;
     outline: none;
     margin-left: -33px;
   }
-  
+
   .search-button img {
     width: 20px;
     height: 20px;
@@ -35,14 +36,247 @@ body {
   }
   .cursor:hover {
       cursor: pointer;
-      
-  }
+
+  } */
 /* -Searchbar ends here------------------------------------------------------ */
-.social-item {
-    color: orange;
-  list-style-type: none;
+
+
+
+
+/*mobile view--*/
+.main-info {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+ }
+.main-info > * {
+    grid-column: 2 /-2;
 }
-img {
-    width: 600px;
+
+.puzzle {
+    display: none;
+}
+
+.hexagon-pic {
+    display: grid;
+    margin: 0 auto;
+    max-width: 50%;
     height: auto;
+
+  }
+.hexagon-container {
+    display: grid;
+    grid-template-columns:  repeat(6, 1fr);
+    text-align: center;
+
 }
+
+.hexagon-container > *  {
+
+    grid-column: 2 / -2;
+}
+.social-list {
+    display: grid;
+    grid-template-columns:  repeat(6, 1fr);
+
+}
+.social-item {
+
+    list-style: none;
+
+}
+.social-list > * {
+    grid-row: 2 / -2;
+    margin-right: 0.5rem;
+
+}
+.social-item:hover {
+    color: blue;
+}
+.discord {
+    width: 8rem;
+    background: linear-gradient(#ff6d00,#ff9e00);
+    color: #fff;
+    margin-right: 1em;
+    text-decoration: none;
+ }
+
+ .discord:hover {
+     color:black;
+ }
+ .learn-more {
+
+    margin-top: 5rem;
+    padding: 0 3rem;
+}
+ /*mobile view ends here */
+
+ @media (min-width: 900px) {
+    .main-info {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        text-align: center;
+     }
+    .main-info > * {
+        grid-column: 2 /-2;
+    }
+    .puzzle {
+        display: contents;
+        display: grid; 
+        grid-template-columns: repeat(6,1fr);
+    }
+    .puzzle > * {
+        grid-column: 2 / -2;
+
+    }
+    .pieces {
+    
+        width: 100%;
+      
+       
+    }
+    .puzzle-header {
+        display: grid;
+        text-align: center;
+
+
+      
+    }  
+    .puzzle-piece {
+     list-style: none;
+     text-align: center;
+            
+    }
+    .puzzle-piece1, .puzzle-piece2, .puzzle-piece3  {
+        max-width: 30%;
+        margin-right: 3rem;
+    }
+
+    .hexagon {
+        display: grid;
+        width: 100%;
+        
+    }
+    .hexagon > * {
+        grid-column: 1/-1;
+    }
+    .hexagon-pic {
+        display: grid;
+        max-width: 100%;
+        height: auto;
+        grid-column: 1/4;
+
+      }
+   
+    .hexagon-header {
+        grid-column: 4/7;
+        margin: 0 0 0 20px;
+    }
+    .hexagon p {
+        grid-column: 4/7;
+       
+    }
+
+    .social-list {
+        display: grid;
+        grid-template-columns:  repeat(6, 1fr);
+        grid-column: 4/6;
+    }
+    .social-item {
+
+        list-style: none;
+
+    }
+    .social-list > * {
+        grid-row: 2 / -2;
+        margin-right: 0.5rem;
+
+    }
+    .social-item:hover {
+        color: blue;
+    }
+    .discord {
+        width: 8rem;
+        background: linear-gradient(#ff6d00,#ff9e00);
+        color: #fff;
+        margin-right: 1rem;
+        text-decoration: none;
+     }
+
+     .discord:hover {
+         color:black;
+
+}
+.learn-more {
+
+    margin-top: 5rem;
+    padding: 0 3rem;
+}
+/* @media (min-width: 1200px)  {
+
+    .main-info {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        text-align: center;
+     }
+    .main-info > * {
+        grid-column: 2 /-2;
+    }
+
+    .puzzle {
+
+    }
+
+    .hexagon-pic {
+        display: grid;
+        margin: 0 auto;
+        max-width: 50%;
+        height: auto;
+
+      }
+    .hexagon-container {
+        display: grid;
+        grid-template-columns:  repeat(6, 1fr);
+        text-align: center;
+
+    }
+
+    .hexagon-container > *  {
+
+        grid-column: 2 / -2;
+    }
+    .social-list {
+        display: grid;
+        grid-template-columns:  repeat(6, 1fr);
+    }
+    .social-item {
+
+        list-style: none;
+        margin: 0;
+
+    }
+    .social-list > * {
+        grid-row: 2 / -2;
+        margin-right: 20px;
+        padding: 0;
+
+    }
+    .social-item:hover {
+        color: blue;
+    }
+    .discord {
+        width: 8rem;
+        background: linear-gradient(#ff6d00,#ff9e00);
+        color: #fff;
+        margin-right: 20px;
+        text-decoration: none;
+     }
+
+     .discord:hover {
+         color:black;
+
+}
+
+
+
+} */
