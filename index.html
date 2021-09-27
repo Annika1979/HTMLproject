@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/02eb2ab63e.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
    
         <!-- navigation page  -->
         
       <header class="header main-grid">
-            <div class="header-content">
+            <!-- <div class="header-content">
                 <a class="logo-link" href="index.html">
                     <img src="images/world-globe.png" alt="" class="logo"> 
                 </a>
@@ -39,10 +40,28 @@
                     </ul>
                   
                 </nav>
-            </div>
-         
+            </div> -->
+            <div class="topnav" id="myTopnav">
+                <a href="#index.hmtl" class="active">Home</a>
+                <a href="#Solutions-page.html">Solutions</a>
+                <a href="#Partnership-page.html">Partnerships</a>
+                <a href="#membership-page.html">Become a Member</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fas fa-bars"></i>
+                </a>
+              </div>
+              <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+                </script>
         </header>
-
+      
 
         <!--Main content-->
        <main>
@@ -100,6 +119,7 @@
                     <p>Explore the ways that your actions can improve the quality of life for future generations:</p>
                 </div>
             </section>    
+           
         </main>
          <!--footer-->
         <footer>
@@ -117,4 +137,6 @@
           
    
 </body>
+
+
 </html>
