@@ -10,20 +10,21 @@ body {
    display: grid;
     grid-template-columns: repeat(6, 1fr); 
 }
+
+/* header for the navigation page*/
 .header {
     background:#422367;
     position: fixed;
     top: 0;
     width: 100%;
     height: 12vh;
- 
-}
-
-    
+ }
+   /*content in the header that is not in the drop down hamburger*/ 
   .header-content {
     display: flex;
     grid-column: 1 /-1;
   } 
+
   .logo {
       height: 10vh;
       margin-top: 1vh;
@@ -36,11 +37,14 @@ body {
     margin-top: 3vh;
     margin-left:3vw;
     width: 150px;
-   
+    border-radius: 10px;
+   }
+   .donations-page {
+    background-image: url("images/Logo.png");
    }
 
 
-/* search bar in navigation test*/
+/* search bar*/
  .form {
     display: flex;
     flex-direction: row;
@@ -73,14 +77,14 @@ body {
       cursor: pointer;
 
   } */ 
-/* -Searchbar ends here------------------------------------------------------ */
-/* Add a black background color to the top navigation */
+
+/* navigation menue that is part of the drop down hamburger */
 .topnav {
     background-color: #422367;
     overflow: hidden;
   }
   
-  /* Style the links inside the navigation bar */
+  
   .topnav a {
     float: left;
     display: block;
@@ -92,17 +96,17 @@ body {
     margin: 2.5vh;
   }
   
-  /* Change the color of links on hover */
+  
   .topnav a:hover {
      color: #000;
   }
   
-  /* Add an active class to highlight the current page */
+  
   .topnav a.active {
     color: #ff6d00;
   }
   
-  /* Hide the link that should open and close the topnav on small screens */
+  
   .topnav  a:not(:last-child){
     display: none;
     }
@@ -126,8 +130,10 @@ body {
     background-color: #422367;
   }
  
+/*navigation ends here*/
 
-/*mobile view--*/
+
+/*mobile view starts here*/
 .main-info {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -188,11 +194,13 @@ body {
     color: blue;
 }
 .discord {
-    width: 8rem;
+    width: 150px;
+    padding: 0.5rem;
     background: linear-gradient(#ff6d00,#ff9e00);
     color: #fff;
     margin-right: 1em;
     text-decoration: none;
+    border-radius: 10px;
  }
 
  .discord:hover {
@@ -236,8 +244,6 @@ body {
     .puzzle-header {
         display: grid;
         text-align: center;
-
-
       
     }  
     .puzzle-piece {
@@ -249,8 +255,8 @@ body {
     .puzzle-piece1, .puzzle-piece2, .puzzle-piece3  {
         max-width: 30%;
         margin-right: 3rem;
-    }
-
+            }
+  
     .hexagon {
         display: grid;
         width: 100%;
@@ -324,14 +330,14 @@ body {
     .main-info > * {
         grid-column: 2 /-2;
     }
-    /* Hide the link that should open and close the topnav on small screens */
-  .topnav a:not(:first-child) {
+  /* displays the text in the navigation bar */
+  .topnav a:not(:last-child) {
     display: block;}
 
-.topnav a.icon {
-  float: right;
-  display: none;
-}
+    .topnav a.icon {
+    float: right;
+     display: none;
+    }
 
 
 
@@ -347,6 +353,8 @@ body {
   display: block;
   text-align: left;
 }
+
+/*navigation ends here*/
     .big-hand{
         display: block;
         width: 80%;
@@ -363,7 +371,7 @@ body {
     .puzzle-piece1, .puzzle-piece2, .puzzle-piece3  {
         max-width: 100%;
         padding: 2rem;
-       
+     
     }
    
     .hexagon {
