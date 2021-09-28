@@ -52,10 +52,7 @@ h1 {
     font-size: 1rem;
 
 }
-        
-
-
-/* search bar*/
+ /* search bar in the header*/
 .form {
     display: flex;
     flex-direction: row;
@@ -246,19 +243,23 @@ h1 {
     .puzzle-header {
         display: grid;
         text-align: center;
+        margin-bottom: 3rem;
     }  
     .puzzle-piece {
         list-style: none;
         text-align: center;
+        
     }
     .puzzle-piece1, .puzzle-piece2, .puzzle-piece3  {
         max-width: 30%;
         margin-right: 3rem;
+        padding: 1rem;
     }
 
     .hexagon {
         display: grid;
         width: 100%;
+        margin-top: 5rem;
     } 
     
     .hexagon > * {
