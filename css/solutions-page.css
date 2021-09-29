@@ -155,6 +155,11 @@ h1 {
 .main-info > * {
     grid-column: 2 /-2;
 }
+
+.orange-text {
+    margin-top: -40px;
+    margin-left: 280px;
+}
 .goals-container {
     display:none; 
 } 
